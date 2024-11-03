@@ -387,12 +387,8 @@
 </template>
 
 <script>
-import BaseIcon from "@/components/BaseIcon.vue";
 import AcademyService from "../services/AcademyService";
 export default {
-  components: {
-    // BaseIcon,
-  },
   data() {
     return {
       overviewExpanded: true,
@@ -429,12 +425,7 @@ export default {
       AcademyService.getCourse(courseId) // Pass courseId to the API call
         .then((response) => {
           this.course = response.data; // Set course data
-        })
-        .catch((error) => {
-          console.error("Error fetching course data:", error);
         });
-    } else {
-      console.error("No course ID provided.");
     }
   },
 };

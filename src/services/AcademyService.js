@@ -16,7 +16,6 @@ const apiClient = axios.create({
 
 // Start NProgress before each request
 apiClient.interceptors.request.use((config) => {
-  console.log("NProgress start"); // Debugging
   nProgress.start();
   return config;
 });
@@ -24,7 +23,6 @@ apiClient.interceptors.request.use((config) => {
 // Stop NProgress after each response or error
 apiClient.interceptors.response.use(
   (response) => {
-    console.log("NProgress done"); // Debugging
     nProgress.done();
     return response;
   },

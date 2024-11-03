@@ -199,14 +199,9 @@ export default {
   },
   methods: {
     fetchCourses() {
-      AcademyService.getCourses()
-        .then((response) => {
-          this.courses = response.data;
-          // console.log(response.data);
-        })
-        .catch((error) => {
-          // console.log("There was an error: ", error.message); // More descriptive error
-        });
+      AcademyService.getCourses().then((response) => {
+        this.courses = response.data;
+      });
     },
     getStarted() {
       this.$router.push({ name: "CourseList" }); // Change to your desired route

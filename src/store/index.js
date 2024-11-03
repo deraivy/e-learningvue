@@ -63,23 +63,13 @@ export default new Vuex.Store({
 
   actions: {
     submitCourseForm({}, formData) {
-      return AcademyService.postCourseForm(formData)
-        .then(() => {
-          console.log("Form submitted successfully");
-        })
-        .catch((error) => {
-          console.error("Error submitting form:", error);
-        });
+      return AcademyService.postCourseForm(formData);
     },
 
     fetchStudent({ commit }, id) {
-      return AcademyService.getStudent(id)
-        .then((response) => {
-          commit("setStudentData", response.data);
-        })
-        .catch((error) => {
-          console.error("Error fetching student data:", error);
-        });
+      return AcademyService.getStudent(id).then((response) => {
+        commit("setStudentData", response.data);
+      });
     },
 
     fetchEducationOptions({ commit }) {
@@ -107,35 +97,20 @@ export default new Vuex.Store({
 
   actions: {
     submitCourseForm({}, formData) {
-      return AcademyService.postCourseForm(formData)
-        .then(() => {
-          console.log("Form submitted successfully");
-        })
-        .catch((error) => {
-          console.error("Error submitting form:", error);
-        });
+      return AcademyService.postCourseForm(formData);
     },
 
     fetchStudent({ commit }, id) {
-      return AcademyService.getStudent(id)
-        .then((response) => {
-          commit("setStudentData", response.data);
-        })
-        .catch((error) => {
-          console.error("Error fetching student data:", error);
-        });
+      return AcademyService.getStudent(id).then((response) => {
+        commit("setStudentData", response.data);
+      });
     },
 
     fetchCourses({ commit }, id) {
-      return AcademyService.getCourses(id)
-        .then((response) => {
-          commit("setCoursesData", response.data); // Commit fetched data
-          return response.data; // Return data for further use
-        })
-        .catch((error) => {
-          console.error("Error fetching courses data:", error);
-          throw error; // Rethrow the error to be handled in the router
-        });
+      return AcademyService.getCourses(id).then((response) => {
+        commit("setCoursesData", response.data); // Commit fetched data
+        return response.data; // Return data for further use
+      });
     },
 
     fetchEducationOptions({ commit }) {
@@ -160,8 +135,4 @@ export default new Vuex.Store({
       commit("setDurationOptions", options);
     },
   },
-  // getters: {
-  //   isLoggedIn: (state) => state.admin,
-  //   isAdmin: (state) => state.role === "admin",
-  // },
 });

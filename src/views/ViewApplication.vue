@@ -84,13 +84,9 @@ export default {
   },
   methods: {
     fetchStudents() {
-      AcademyService.getStudents()
-        .then((response) => {
-          this.students = response.data;
-        })
-        .catch((error) => {
-          console.error("Error fetching students:", error);
-        });
+      AcademyService.getStudents().then((response) => {
+        this.students = response.data;
+      });
     },
   },
 };
