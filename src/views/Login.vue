@@ -80,10 +80,10 @@ export default {
     getUser() {
       const user = JSON.parse(localStorage.getItem("user"));
       if (user) {
-        console.log("Retrieved user data:", user);
+        // console.log("Retrieved user data:", user);
         return user;
       } else {
-        console.log("No user data found in localStorage");
+        // console.log("No user data found in localStorage");
         return null;
       }
     },

@@ -202,10 +202,10 @@ export default {
       AcademyService.getCourses()
         .then((response) => {
           this.courses = response.data;
-          console.log(response.data);
+          // console.log(response.data);
         })
         .catch((error) => {
-          console.log("There was an error: ", error.message); // More descriptive error
+          // console.log("There was an error: ", error.message); // More descriptive error
         });
     },
     getStarted() {

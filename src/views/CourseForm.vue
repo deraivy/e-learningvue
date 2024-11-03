@@ -412,38 +412,38 @@ export default {
       this.$v.$touch();
 
       if (!this.$v.$invalid) {
-        console.log("Form is valid. Proceeding with submission.");
+        // console.log("Form is valid. Proceeding with submission.");
         AcademyService.postStudent(this.formData)
           .then(() => {
             this.resetForm();
           })
           .catch((error) => {
             alert("Error submitting form. Please try again.");
-            console.error("Error submitting form:", error);
+            // console.error("Error submitting form:", error);
           });
       } else {
-        console.log("Form validation errors detected:");
+        // console.log("Form validation errors detected:");
         this.logValidationErrors(); // Log each field's validation state for debugging
       }
     },
 
-    logValidationErrors() {
-      console.log("Name valid:", !this.$v.formData.name.$invalid);
-      console.log("Email valid:", !this.$v.formData.email.$invalid);
-      console.log("Phone valid:", !this.$v.formData.phone.$invalid);
-      console.log("Gender valid:", !this.$v.formData.gender.$invalid);
-      console.log("DOB valid:", !this.$v.formData.dob.$invalid);
-      console.log("Address valid:", !this.$v.formData.address.$invalid);
-      console.log("City valid:", !this.$v.formData.city.$invalid);
-      console.log("State valid:", !this.$v.formData.state.$invalid);
-      console.log("Nationality valid:", !this.$v.formData.nationality.$invalid);
-      console.log(
-        "Education Level valid:",
-        !this.$v.formData.educationLevel.$invalid
-      );
-      console.log("Duration valid:", !this.$v.formData.duration.$invalid);
-      console.log("Reason valid:", !this.$v.formData.reason.$invalid);
-    },
+    // logValidationErrors() {
+    //   console.log("Name valid:", !this.$v.formData.name.$invalid);
+    //   console.log("Email valid:", !this.$v.formData.email.$invalid);
+    //   console.log("Phone valid:", !this.$v.formData.phone.$invalid);
+    //   console.log("Gender valid:", !this.$v.formData.gender.$invalid);
+    //   console.log("DOB valid:", !this.$v.formData.dob.$invalid);
+    //   console.log("Address valid:", !this.$v.formData.address.$invalid);
+    //   console.log("City valid:", !this.$v.formData.city.$invalid);
+    //   console.log("State valid:", !this.$v.formData.state.$invalid);
+    //   console.log("Nationality valid:", !this.$v.formData.nationality.$invalid);
+    //   console.log(
+    //     "Education Level valid:",
+    //     !this.$v.formData.educationLevel.$invalid
+    //   );
+    //   console.log("Duration valid:", !this.$v.formData.duration.$invalid);
+    //   console.log("Reason valid:", !this.$v.formData.reason.$invalid);
+    // },
 
     resetForm() {
       this.formData = {
