@@ -405,7 +405,8 @@ export default {
           this.formData.title = this.course.title;
         })
         .catch((error) => {
-          console.error("Error fetching course:", error);
+          //
+          // console.log("Error fetching course:", error);
         });
     },
     submitForm() {
