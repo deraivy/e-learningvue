@@ -19,14 +19,14 @@
               won’t be alone in your studies; our support is just a reach away.
             </p>
             <button
-              class="bg-black text-white py-3 px-6 rounded-lg shadow-lg hover:bg-gray-800 transition duration-200"
+              class="bg-black text-white py-3 px-6 rounded-lg shadow-lg hover:bg-[#186ac3] transition duration-200"
               @click="getStarted"
             >
               Get Started
             </button>
           </div>
 
-          <div class="hidden sm:block sm:w-1/2 lg:w-3/5 relative">
+          <div class="hidden sm:block sm:w-2/2 lg:w-3/5 relative">
             <img
               src="../assets/main-banner3.png"
               class="max-w-full md:max-w-md lg:max-w-lg xl:max-w-xl m-auto"

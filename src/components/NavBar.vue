@@ -1,7 +1,7 @@
 <template>
   <div id="nav" class="container mx-auto my-8 px-4 md:px-8 lg:px-16">
     <div class="flex justify-between items-center">
-      <router-link to="/" class="font-bold text-2xl hover:text-pink-500"
+      <router-link to="/" class="font-bold text-2xl hover:text-[#186ac3]"
         >Speed Academy</router-link
       >
 
@@ -30,35 +30,35 @@
       <nav class="hidden md:flex space-x-4">
         <a
           href="#about"
-          class="text-lg font-bold hover:text-pink-500"
+          class="text-lg font-bold hover:text-[#186ac3]"
           @click.prevent="scrollToSection('about')"
           >About Us</a
         >
         <a
           href="#courses"
           @click.prevent="scrollToSection('courses')"
-          class="text-lg font-bold hover:text-pink-500"
+          class="text-lg font-bold hover:text-[#186ac3]"
           >Courses</a
         >
 
         <router-link
           v-if="isAdmin"
           :to="{ name: 'view-application' }"
-          class="text-lg font-bold hover:text-pink-500"
+          class="text-lg font-bold hover:text-[#186ac3]"
           >View Application</router-link
         >
 
         <router-link
           v-if="!isLoggedIn"
           :to="{ name: 'login' }"
-          class="text-lg font-bold hover:text-pink-500"
+          class="text-lg font-bold hover:text-[#186ac3]"
           >Login</router-link
         >
 
         <button
           v-if="isAdmin"
           @click="logout"
-          class="text-lg font-bold hover:text-pink-500"
+          class="text-lg font-bold hover:text-[#186ac3]"
         >
           Logout
         </button>
@@ -70,32 +70,32 @@
       <nav class="flex flex-col space-y-2">
         <a
           href="#about"
-          class="text-lg font-bold hover:text-pink-500"
+          class="text-lg font-bold hover:text-[#186ac3]"
           @click.prevent="scrollToSection('about')"
           >About Us</a
         >
         <a
           href="#courses"
           @click.prevent="scrollToSection('courses')"
-          class="text-lg font-bold hover:text-pink-500"
+          class="text-lg font-bold hover:text-[#186ac3]"
           >Courses</a
         >
         <router-link
           v-if="isAdmin"
           :to="{ name: 'view-application' }"
-          class="text-lg font-bold hover:text-pink-500"
+          class="text-lg font-bold hover:text-[#186ac3]"
           >View Application</router-link
         >
         <router-link
           v-if="!isLoggedIn"
           :to="{ name: 'login' }"
-          class="text-lg font-bold hover:text-pink-500"
+          class="text-lg font-bold hover:text-[#186ac3]"
           >Login</router-link
         >
         <button
           v-if="isAdmin"
           @click="logout"
-          class="text-lg font-bold hover:text-pink-500"
+          class="text-lg font-bold hover:text-[#186ac3]"
         >
           Logout
         </button>

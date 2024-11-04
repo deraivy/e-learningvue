@@ -393,7 +393,16 @@ export default {
       overviewExpanded: true,
       reviewExpanded: false,
       bannerImage: require("../assets/events-details3.jpg"),
-      courses: [
+      course: {
+        id: null,
+        title: "",
+        description: "",
+        monthone: "",
+        durationone: "",
+        instructor: "",
+        targetAudience: [],
+      },
+      courseList: [
         {
           id: "1",
           title: "Frontend Development",
