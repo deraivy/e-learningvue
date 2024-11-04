@@ -57,19 +57,19 @@
             </p>
             <ul class="space-y-2">
               <li class="flex items-center">
-                <img
+                <!-- <img
                   src="/icon/world-2-svgrepo-com (1).svg"
                   alt=""
                   class="w-6 h-6 mr-2"
-                />
+                /> -->
                 <span>Available worldwide</span>
               </li>
               <li class="flex items-center">
-                <img src="/icon/remote.svg" alt="" class="w-8 h-8 mr-2" />
+                <!-- <img src="/icon/remote.svg" alt="" class="w-8 h-8 mr-2" /> -->
                 <span>Remote Learning</span>
               </li>
               <li class="flex items-center">
-                <img src="/icon/timer.svg" alt="" class="w-5 h-5 mr-2" />
+                <!-- <img src="/icon/timer.svg" alt="" class="w-5 h-5 mr-2" /> -->
                 <span>Lifetime access</span>
               </li>
             </ul>
@@ -129,7 +129,7 @@
             <div class="p-6">
               <img src="/icon/shield.svg" alt="" class="mb-4" />
               <h3 class="text-lg font-semibold">Learn From Industry Experts</h3>
-              <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+              <p class="mt-2 text-sm leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 auctor auctor arcu, at fermentum dui. Maecenas
               </p>
@@ -141,7 +141,7 @@
             <div class="p-6">
               <img src="/icon/setting.svg" alt="" class="mb-4" />
               <h3 class="text-lg font-semibold">Learn the Latest Skills</h3>
-              <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+              <p class="mt-2 text-sm leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 auctor auctor arcu, at fermentum dui. Maecenas
               </p>
